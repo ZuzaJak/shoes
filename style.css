@@ -1,0 +1,127 @@
+/* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
+html,
+body {
+  height: 100%;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  font-family: 'Rubik', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+}
+
+/*
+ BARVY
+ svetle sede pozadi      #f5f5f5
+ tmavsi seda             #959595
+ barevny prechod nahore  #06d7c1
+ barevny prechod dole    #50cc49
+ zelena cara             #06d7c1
+ oranzova                #f15f42
+
+ PISMO
+ Rubik - pouzite rezy pisma regular 400 a medium 500
+ https://fonts.google.com/specimen/Rubik
+*/
+
+/* ----- zde zacni psat vlastni css ----- */
+.zbozi {
+  display: flex;
+  width: 670px;
+  height: 440px;
+  border-radius: 20px;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(201, 199, 201, 1);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(201, 199, 201, 1);
+  box-shadow: 10px 10px 5px 0px rgba(201, 199, 201, 1);
+}
+.vizual {
+  background-image: linear-gradient(#06d7c1, #50cc49);
+  width: 50%;
+  padding: 30px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+}
+.detaily {
+  width: 50%;
+  padding: 30px;
+}
+.logo {
+  padding-bottom: 30px;
+}
+.slogan {
+  margin: 0;
+}
+.bota {
+  position: relative;
+}
+.bota img {
+  display: inline-block;
+  position: absolute;
+  right: 2px;
+  top: 5px;
+}
+.cenovka {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+.cena {
+  text-align: end;
+  font-size: 28px;
+  font-weight: 500;
+}
+.zaruka {
+  font-size: 12px;
+  font-weight: 400;
+}
+.nazev {
+  font-size: 20px;
+  font-weight: 500;
+}
+.produkt {
+  color: #959595;
+}
+.popis {
+  border-bottom: 1px solid #06d7c1;
+  padding-bottom: 30px;
+}
+.parametr {
+  margin-top: 30px;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+.velikosti {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+}
+.tlacitko {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 20px;
+  background-color: #f15f42;
+  border-radius: 20px;
+}
+.tlacitko:hover {
+  background-color: #50cc49;
+  transition: 0.4s;
+}
