@@ -66,14 +66,10 @@ body {
 .slogan {
   margin: 0;
 }
-.bota {
-  position: relative;
-}
 .bota img {
-  display: inline-block;
   position: absolute;
   right: 2px;
-  top: 5px;
+  bottom: 5px;
 }
 .cenovka {
   position: absolute;
