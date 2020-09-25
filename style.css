@@ -121,3 +121,12 @@ body {
   background-color: #50cc49;
   transition: 0.4s;
 }
+.velikosti li {
+  padding: 5px;
+}
+.velikosti li:hover {
+  border: solid 1px #f15f42;
+  color: #f15f42;
+  border-radius: 50%;
+  font-weight: 500;
+}
