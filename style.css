@@ -123,6 +123,7 @@ body {
 }
 .velikosti li {
   padding: 5px;
+  border: solid 1px white;
 }
 .velikosti li:hover {
   border: solid 1px #f15f42;
